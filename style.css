@@ -1,0 +1,50 @@
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        margin-top: 3rem;
+    }
+}
+
+#copy:hover .fa-clipboard {
+    color: #60abfb;
+}
+
+#succeededCopy {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    height: 300px;
+    opacity: 0;
+    color: #dcdcdcd6;
+}
+
+#succeededCopy.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+   
+}
+
+#succeededCopy:not(.show){
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.fa-clipboard-check {
+    font-size: 300px;
+}
